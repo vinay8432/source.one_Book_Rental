@@ -1,0 +1,104 @@
+[
+    
+        {
+            "title": "Harry Potter and the Sorcerer's Stone",
+            "author": "J.K. Rowling",
+            "availableCopies":10
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "availableCopies":5
+        },
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "availableCopies":7
+        },
+        {
+            "title": "The Lord of the Rings",
+            "author": "J.R.R. Tolkien",
+            "availableCopies":8
+        },
+        {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "availableCopies":6
+        },
+        {
+            "title": "The Adventures of Huckleberry Finn",
+            "author": "Mark Twain",
+            "availableCopies":4
+        },
+        {
+            "title": "The Diary of a Young Girl",
+            "author": "Anne Frank",
+            "availableCopies":3
+        },
+        {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "availableCopies":9
+        },
+        {
+            "title": "The Lion, the Witch and the Wardrobe",
+            "author": "C.S. Lewis",
+            "availableCopies":7
+        },
+        {
+            "title": "The Da Vinci Code",
+            "author": "Dan Brown",
+            "availableCopies":10
+        },
+        {
+            "title": "The Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams",
+            "availableCopies":5
+        },
+        {
+            "title": "The Alchemist",
+            "author": "Paulo Coelho",
+            "availableCopies":8
+        },
+        {
+            "title": "The Giving Tree",
+            "author": "Shel Silverstein",
+            "availableCopies":3
+        },
+        {
+            "title": "The Odyssey",
+            "author": "Homer",
+            "availableCopies":4
+        },
+        {
+            "title": "The Iliad",
+            "author": "Homer",
+            "availableCopies":6
+        },
+        {
+            "title": "The Republic",
+            "author": "Plato",
+            "availableCopies":7
+        },
+        {
+            "title": "The Divine Comedy",
+            "author": "Dante Alighieri",
+            "availableCopies":5
+        },
+        {
+            "title": "The Inferno",
+            "author": "Dante Alighieri",
+            "availableCopies":8
+        },
+        {
+            "title": "The Aeneid",
+            "author": "Virgil",
+            "availableCopies":9
+        },
+        {
+            "title": "The Canterbury Tales",
+            "author": "Geoffrey Chaucer",
+            "availableCopies":10
+        }
+    
+    ]
