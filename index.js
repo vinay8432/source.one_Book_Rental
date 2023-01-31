@@ -8,7 +8,10 @@ const Rental = require('./models/rental.model.js');
 mongoose.connect('mongodb+srv://vinay123:vinay123@practicepurpose.dsxyj.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 // Book rental rate per day
-const RENTAL_RATE = 1;
+const RENTAL_RATE_FICTION = 3;
+const RENTAL_RATE_REGULAR = 1.5;
+const RENTAL_RATE_NOVELS = 1.5;
+
 
 
 // parse requests of content-type - application/json
@@ -18,8 +21,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Route to rent a book
 app.post('/rent', async (req, res) => {
-
-  console.log(req.body)
 
   if (!("customerId" && "bookIds_with_duration" in req.body)) {
 
@@ -53,7 +54,13 @@ app.post('/rent', async (req, res) => {
               duration = book_data['duration']
             }
           })
-          charge = charge + (RENTAL_RATE * duration)
+          if (book.type == "fiction"){
+            charge = charge + (RENTAL_RATE_FICTION * duration)
+          } else if (book.type == "novels"){
+            charge = charge + (RENTAL_RATE_NOVELS * duration)
+          } else if (book.type == "regular") {
+            charge = charge + (RENTAL_RATE_REGULAR * duration)
+          }
         }
       })
 
