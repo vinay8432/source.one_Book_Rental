@@ -54,12 +54,21 @@ app.post('/rent', async (req, res) => {
               duration = book_data['duration']
             }
           })
-          if (book.type == "fiction"){
-            charge = charge + (RENTAL_RATE_FICTION * duration)
-          } else if (book.type == "novels"){
-            charge = charge + (RENTAL_RATE_NOVELS * duration)
-          } else if (book.type == "regular") {
-            charge = charge + (RENTAL_RATE_REGULAR * duration)
+          if(duration>0){
+            if (book.type == "fiction"){
+              charge = charge + (RENTAL_RATE_FICTION * duration)
+            } else if (book.type == "novels"){
+              charge = charge + 4.5
+              if(duration>3){
+                charge = charge + (RENTAL_RATE_NOVELS * (duration-3))
+              }
+            } else if (book.type == "regular") {
+              charge = charge + 2
+              if(duration > 2){
+                charge = charge + (RENTAL_RATE_REGULAR * (duration-2))
+              }
+              
+            }
           }
         }
       })
